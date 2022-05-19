@@ -1,6 +1,8 @@
 # cheat-sheet-personal
 This repository serves as a quick reference of some useful commands.
 
+**Replace 'pipe' by ➞ |**
+
 ## View, create, edit files and directories
 | Command | Description |
 | --- | --- |
@@ -29,8 +31,8 @@ This repository serves as a quick reference of some useful commands.
 | `df -h` | Storage usage of mounted partitions |
 | `tree` | View the directory structure for a path |
 | `du` | See disk usage of directory's contens |
-| `du -h [path]|sort -rh|head -5 ` | organize the 5 largest volumes |
-| `lsof -i -P -n | grep LISTEN ` | To see open ports |
+| `du -h [path] 'pipe' sort -rh 'pipe' head -5 ` | organize the 5 largest volumes |
+| `lsof -i -P -n 'pipe' grep LISTEN ` | To see open ports |
 | `lsof -i:[port]` | See a specific port |
 
 ## GIT
@@ -42,7 +44,7 @@ This repository serves as a quick reference of some useful commands.
 ## Network
 | Command | Description |
 | --- | --- |
-| `netstat -pnat [port]|grep [port]` | Id from port and ip connection |
+| `netstat -pnat [port] 'pipe' grep [port]` | Id from port and ip connection |
 | `nmap -sS -O 127.0.0.1` | Change message of last commit |
 | `telnet [host][port]` | Status connection |
 
@@ -52,7 +54,11 @@ This repository serves as a quick reference of some useful commands.
 | `kubectl create deployment [name]` | Create deployment |
 | `kubectl edit deployment [name]` | Edit deployment |
 | `kubectl delete deployment [name]` | Delete deployment |
-| `kubectl get nodes |pod|servies|replicaset|deployment` | Status of differents K8S components |
+| `kubectl get nodes ` | Status of differents K8S components |
+| `kubectl get pod` | Status of differents K8S components |
+| `kubectl get servies` | Status of differents K8S components |
+| `kubectl get replicaset` | Status of differents K8S components |
+| `kubectl get deployment` | Status of differents K8S components |
 | `kubectl logs [pod name]` | Log to console |
 | `kubectl exec -it [pod name] --bin/bash` | Get interactive terminal |
 | `kubectl apply -f [path file]` | Apply a configuration file |
